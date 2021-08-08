@@ -72,8 +72,8 @@ public class TemplateBuilder {
             SERVICENAME = props.getProperty("serviceName");
             SWAGGERUI_PATH = props.getProperty("swaggeruipath");
             //工程路径
-            PROJECT_PATH=TemplateBuilder.class.getClassLoader().getResource("").getPath().replace("/target/classes/","")+"/src/main/java/";
-
+            PROJECT_PATH=TemplateBuilder.class.getClassLoader().getResource("").toURI().getPath().replace("/target/classes/","")+"/src/main/java/";
+            // PROJECT_PATH = java.net.URLDecoder.decode(PROJECT_PATH, "utf-8");
             //加载数据库驱动
             Class.forName(props.getProperty("driver"));
         } catch (Exception e) {

@@ -8,3 +8,11 @@
 解决方案：https://blog.csdn.net/WinstonLau/article/details/90205141
 
 推荐使用博客中的方案二解决
+
+---
+
+2021.08.08修改
+
++ 修改application.properties乱码
++ 解决路径中出现中文后的乱码报错问题
++ 重写mapper.java模板，给每个mapper添加@Repository注解

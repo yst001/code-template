@@ -1,13 +1,13 @@
-package ${package_mapper};
-import ${package_pojo}.${Table};
+package com.changgou.goods.dao;
+import com.changgou.goods.pojo.Album;
 import tk.mybatis.mapper.common.Mapper;
 import org.springframework.stereotype.Repository;
 
 /****
  * @Author:shenkunlin
- * @Description:${Table}的Dao
+ * @Description:Album的Dao
  * @Date 2019/6/14 0:12
  *****/
 @Repository
-public interface ${Table}Mapper extends Mapper<${Table}> {
+public interface AlbumMapper extends Mapper<Album> {
 }
